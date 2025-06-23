@@ -24,4 +24,8 @@ describe('CHK challenge: calculating total checkout', function () {
     it('should return -1, for non-item input', function () {
         assert.equal(new CheckoutSolution().checkout('ABSDF'), -1);
     });
+
+    it('should return -1, for multiple item combination input', function () {
+        assert.equal(new CheckoutSolution().checkout('ABCCAABDBA'), 310);
+    });
 });
