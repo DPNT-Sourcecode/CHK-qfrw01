@@ -26,6 +26,13 @@ describe('CHK challenge: calculating total checkout', function () {
     });
 
     it('should return 200, for 4Es and 4Bs', function () {
-        assert.equal(new CheckoutSolution().checkout('EEEEBBBB'), 200);
+        assert.equal(new CheckoutSolution().checkout('EEEEBBBB'), 205);
+    });
+
+    it('should return 455, for a mixed complex basket', function () {
+        assert.equal(new CheckoutSolution().checkout('AAABBBCCCDDDEEE'), 455);
+    });
+    it('should return -1, for invalid input', function () {
+        assert.equal(new CheckoutSolution().checkout('GEWF'), -1);
     });
 });
