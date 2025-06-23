@@ -46,4 +46,3 @@ describe('CHK challenge: calculating total checkout', function () {
         assert.equal(new CheckoutSolution().checkout('GEWF'), -1);
     });
 });
-
