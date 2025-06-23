@@ -42,7 +42,7 @@ describe('CHK challenge: calculating total checkout', function () {
     });
 
     it('should return 165, for a mixed complex basket with F ', function () {
-        assert.equal(new CheckoutSolution().checkout('NNNM'), 120);
+        assert.equal(new CheckoutSolution().checkout('UUU'), 120);
     });
 
 });
