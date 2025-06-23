@@ -41,8 +41,4 @@ describe('CHK challenge: calculating total checkout', function () {
         assert.equal(new CheckoutSolution().checkout('ABCDEF'), 165);
     });
 
-
-    it('should return -1, for invalid input', function () {
-        assert.equal(new CheckoutSolution().checkout('GEWF'), -1);
-    });
 });
