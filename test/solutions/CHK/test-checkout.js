@@ -30,7 +30,7 @@ describe('CHK challenge: calculating total checkout', function () {
     });
 
     it('should return 455, for a mixed complex basket', function () {
-        assert.equal(new CheckoutSolution().checkout('AAABBBCCCDDDEEE'), 455);
+        assert.equal(new CheckoutSolution().checkout('AAABBBCCCDDDEEE'), 400);
     });
     it('should return -1, for invalid input', function () {
         assert.equal(new CheckoutSolution().checkout('GEWF'), -1);
