@@ -42,8 +42,8 @@ describe('CHK challenge: calculating total checkout', function () {
     });
 
 
-    it('should return 145, for a mixed complex basket with group discounts and regular items ', function () {
-        assert.equal(new CheckoutSolution().checkout('ABCSTX'), 145);
+    it('should return 20, for FFF', function () {
+        assert.equal(new CheckoutSolution().checkout('FFF'), 20);
     });
 
 });
